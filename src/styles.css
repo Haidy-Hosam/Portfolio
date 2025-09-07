@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'AmouraRosbeleDemo-1GJ1e.otf'; /* اسم الخط اللي هتستخدميه */
+  src: url('/assets/fonts/AmouraRosbeleDemo-1GJ1e.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background: linear-gradient(135deg, #000046 ,#1CB5E0);
+}

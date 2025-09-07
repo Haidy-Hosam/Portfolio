@@ -1,0 +1,16 @@
+.footer {
+  background: linear-gradient(to right, #001f4d, #0066cc); /* نفس تدرج الخلفية */
+  color: white;
+  margin-top: 40px;
+}
+
+.footer a {
+  color: #25D366; /* أخضر WhatsApp */
+  text-decoration: none;
+  margin: 0 8px;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ffffff; /* يتحول أبيض عند hover */
+}

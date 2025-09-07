@@ -1,0 +1,46 @@
+/* Navbar أساسي */
+.navbar {
+  background: linear-gradient(to right, #001f4d, #0066cc); /* نفس ألوان الباكجراوند */
+  padding: 12px 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* اللينكات */
+.navbar .nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  margin: 0 12px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* hover على اللينكات */
+.navbar .nav-link:hover {
+  color: #25D366 !important; /* أخضر WhatsApp */
+  transform: translateY(-2px); /* حركة خفيفة */
+}
+
+/* اللينك Active */
+.navbar .nav-item.active .nav-link {
+  color: #25D366 !important;
+  font-weight: 600;
+  border-bottom: 2px solid #25D366;
+}
+
+/* زرار التوجّل (الموبايل) */
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler i {
+  color: white;
+  font-size: 22px;
+}
+
+.btn-outline-success {
+  color: #ffffff;          /* لون الخط */
+}
+.btn-outline-success:hover {
+  background-color: #001f4d;  /* لما تعملي hover */
+  color: white;               /* لون الخط */
+}

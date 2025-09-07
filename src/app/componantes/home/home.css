@@ -1,0 +1,80 @@
+.Hello{
+    color: #ffffff;
+    margin: 1.5cm;
+    /* margin-top: .5cm; */
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between; /* يخلي النص على الشمال والصورة على اليمين */
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.about-text h2 {
+  flex: 1; /* ياخد المساحة المتاحة */
+  color: rgb(255, 255, 255);
+  font-family: "AmouraRosbeleDemo-1GJ1e.otf";
+  font-weight: 0; /* سميك */
+}
+
+.about-text{
+  width: 700px;; /* ياخد المساحة المتاحة */
+  color: rgb(255, 255, 255);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100; /* سميك */
+}
+.profile-container {
+  flex-shrink: 0; /* يمنع الصورة تصغر بشكل مبالغ فيه */
+    margin-top: -90px; /* ارفعيها لفوق */
+
+}
+
+.profile-img {
+  width: 400px;       /* حجم الصورة */
+  height: 400px;
+  border-radius: 50%; /* يخليها دايرة */
+  object-fit: cover;  /* يظبط الصورة جوا الدايرة */
+  border: 4px solid #ccc; /* إطار بسيط */
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2); /* ظل خفيف */
+  transition: transform 0.5s ease-in-out, box-shadow 0.6s ease-in-out;
+}
+
+.profile-img:hover {
+  transform: rotate(5deg) scale(1.05);
+  box-shadow: 0px 12px 30px rgba(0,0,0,0.35);
+}
+
+.about-img img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;        /* يخليها دايرة */
+  object-fit: cover;
+  border: 4px solid #ccc;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+}
+.btn-whatsapp {
+  background-color: #06983e;   /* اللون الأخضر بتاع WhatsApp */
+  border: none;
+  color: white;
+  font-weight: 300;
+  transition: background-color 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: #06983e;  /* أخضر أغمق شوية عند الـ hover */
+  color: white;
+}
+.Bottoms{
+    /* margin-right: 10px;
+    padding-right: 10px; */
+    display: flex;
+  gap: 15px; /* المسافة بين الزرارين */
+}
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column; /* يخليهم تحت بعض */
+    text-align: center;
+  }
+}
