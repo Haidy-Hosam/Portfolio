@@ -3,32 +3,36 @@
     margin: 1.5cm;
     /* margin-top: .5cm; */
 }
-
+.about-text p {
+  width: 110%;
+  font-size: 12px;   
+  line-height: 1.6;  
+  color: #e0e0e0;
+}
 .about-container {
   display: flex;
-  justify-content: space-between; /* يخلي النص على الشمال والصورة على اليمين */
+  justify-content: space-between; 
   align-items: center;
-  gap: 20px;
-  padding: 20px;
+  gap: 50px;
+  padding: 10px;
 }
 
-.about-text h2 {
-  flex: 1; /* ياخد المساحة المتاحة */
+.about-text h1 {
+  flex: 1; 
   color: rgb(255, 255, 255);
   font-family: "AmouraRosbeleDemo-1GJ1e.otf";
   font-weight: 0; /* سميك */
 }
 
 .about-text{
-  width: 700px;; /* ياخد المساحة المتاحة */
+  width: 900px; 
   color: rgb(255, 255, 255);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 100; /* سميك */
+  font-weight: 3; 
 }
 .profile-container {
-  flex-shrink: 0; /* يمنع الصورة تصغر بشكل مبالغ فيه */
-    margin-top: -90px; /* ارفعيها لفوق */
-
+  flex-shrink: 0; 
+  margin-top: -300px; 
 }
 
 .profile-img {
@@ -72,6 +76,7 @@
     display: flex;
   gap: 15px; /* المسافة بين الزرارين */
 }
+
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column; /* يخليهم تحت بعض */

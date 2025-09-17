@@ -1,32 +1,48 @@
 /* Navbar أساسي */
-.navbar {
-  background: linear-gradient(to right, #001f4d, #0066cc); /* نفس ألوان الباكجراوند */
-  padding: 12px 30px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+.custom-navbar {
+  background: linear-gradient(90deg, #0a0f24, #1a2a6c, #0066cc);
+  padding: 14px 40px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
-/* اللينكات */
-.navbar .nav-link {
+/* Logo */
+.navbar-brand {
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.custom-navbar .nav-link {
   color: #ffffff !important;
   font-weight: 500;
-  margin: 0 12px;
-  transition: color 0.3s ease, transform 0.3s ease;
+  margin: 0 15px;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
-/* hover على اللينكات */
-.navbar .nav-link:hover {
-  color: #25D366 !important; /* أخضر WhatsApp */
-  transform: translateY(-2px); /* حركة خفيفة */
+/* تأثير الخط تحت اللينك */
+.custom-navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: #25D366;
+  transition: width 0.3s ease;
 }
 
-/* اللينك Active */
-.navbar .nav-item.active .nav-link {
+.custom-navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Active Link */
+.custom-navbar .nav-item.active .nav-link {
   color: #25D366 !important;
   font-weight: 600;
-  border-bottom: 2px solid #25D366;
 }
 
-/* زرار التوجّل (الموبايل) */
+/* زرار الموبايل */
 .navbar-toggler {
   border: none;
   outline: none;
@@ -37,10 +53,43 @@
   font-size: 22px;
 }
 
-.btn-outline-success {
-  color: #ffffff;          /* لون الخط */
+/* Search box */
+.search-box {
+  display: flex;
+  align-items: center;
+  background: rgba(255,255,255,0.15);
+  border-radius: 25px;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
 }
-.btn-outline-success:hover {
-  background-color: #001f4d;  /* لما تعملي hover */
-  color: white;               /* لون الخط */
+
+.search-box:hover {
+  background: rgba(255,255,255,0.25);
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  padding: 5px 10px;
+  width: 160px;
+}
+
+.search-input::placeholder {
+  color: #ddd;
+}
+
+.search-btn {
+  background: #0d1257;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.search-btn:hover {
+  transform: scale(1.1);
 }
